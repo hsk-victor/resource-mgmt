@@ -4,8 +4,10 @@
   "description": "This is a reference project for the DVOPS subject.",
   "main": "index.js",
   "scripts": {
-    "test": "jest --verbose",
-    "test-frontend": "npx playwright test"
+    "test": "jest --verbose --coverage",
+    "test:coverage": "jest --verbose",
+    "test-frontend": "npx playwright test",
+    "test-frontend:coverage": "node generate-coverage.js"
   },
   "repository": {
     "type": "git",
